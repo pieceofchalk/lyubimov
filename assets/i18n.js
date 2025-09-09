@@ -130,7 +130,30 @@ window.I18N = {
     "legal": {
       "privacyTitle": "Política de privacidad",
       "legalTitle": "Aviso legal",
-      "cookiesTitle": "Política de cookies"
+      "cookiesTitle": "Política de cookies",
+      "cookies": {
+        "intro": "Este sitio utiliza únicamente cookies técnicas para recordar el idioma seleccionado y la preferencia sobre el banner de cookies. No se utilizan cookies de análisis ni de publicidad.",
+        "usage": "Cookies utilizadas: <strong>lang</strong> (preferencia de idioma), <strong>cookieConsent</strong> (preferencia de consentimiento). Duración: hasta 12 meses.",
+        "config": "Cómo cambiar la configuración: puedes borrar las cookies desde la configuración de tu navegador. Si rechazas el uso de cookies, el sitio seguirá funcionando.",
+        "more": "Consulta la <a href=\"privacy.html\">Política de privacidad</a> para más información."
+      },
+      "privacy": {
+        "responsible": "Responsable: Dmitry Lyubimov. Contacto: <a href=\"mailto:mitya.lyubimov@gmail.com\">mitya.lyubimov@gmail.com</a>. Domicilio: Barcelona, España.",
+        "purposes": "Finalidades: gestionar consultas realizadas a través del formulario y, en su caso, la relación profesional y administrativa con clientes. Base jurídica: consentimiento del interesado y/o ejecución de medidas precontractuales o contractuales.",
+        "retention": "Conservación: los datos se conservarán el tiempo necesario para atender la finalidad y cumplir obligaciones legales.",
+        "recipients": "Destinatarios: no se ceden datos a terceros salvo obligación legal.",
+        "rights": "Derechos: acceso, rectificación, supresión, oposición, limitación y portabilidad. Para ejercerlos, escribe a mitya.lyubimov@gmail.com. También puedes reclamar ante la AEPD.",
+        "international": "Transferencias internacionales: no están previstas.",
+        "cookies": "Cookies: ver la <a href=\"cookies.html\">Política de cookies</a>."
+      },
+      "notice": {
+        "owner": "Titular del sitio: Dmitry Lyubimov. Domicilio: Barcelona, España. Correo: <a href=\"mailto:mitya.lyubimov@gmail.com\">mitya.lyubimov@gmail.com</a>.",
+        "purpose": "Objeto: sitio web informativo sobre servicios profesionales.",
+        "conditions": "Condiciones de uso: el usuario se compromete a un uso diligente del sitio y a respetar la legalidad vigente.",
+        "intellectual": "Propiedad intelectual: los contenidos del sitio pertenecen a su titular. No se permite su reproducción sin autorización.",
+        "responsibility": "Responsabilidad: el titular no se hace responsable del uso que se haga de la información del sitio ni de daños derivados.",
+        "jurisdiction": "Legislación aplicable y jurisdicción: la española. Para cualquier controversia, las partes se someten a los Juzgados y Tribunales de Barcelona."
+      }
     },
     "cookieBar": {
       "text": "Este sitio utiliza solo cookies técnicas para recordar tu idioma. Puedes aceptar o rechazar.",
@@ -270,7 +293,30 @@ window.I18N = {
     "legal": {
       "privacyTitle": "Privacy Policy",
       "legalTitle": "Legal Notice", 
-      "cookiesTitle": "Cookie Policy"
+      "cookiesTitle": "Cookie Policy",
+      "cookies": {
+        "intro": "This site only uses technical cookies to remember the selected language and cookie banner preference. No analytics or advertising cookies are used.",
+        "usage": "Cookies used: <strong>lang</strong> (language preference), <strong>cookieConsent</strong> (consent preference). Duration: up to 12 months.",
+        "config": "How to change settings: you can delete cookies from your browser settings. If you reject cookies, the site will continue working.",
+        "more": "See the <a href=\"privacy.html\">Privacy Policy</a> for more information."
+      },
+      "privacy": {
+        "responsible": "Data Controller: Dmitry Lyubimov. Contact: <a href=\"mailto:mitya.lyubimov@gmail.com\">mitya.lyubimov@gmail.com</a>. Address: Barcelona, Spain.",
+        "purposes": "Purposes: managing inquiries made through the form and, where applicable, the professional and administrative relationship with clients. Legal basis: consent of the data subject and/or execution of pre-contractual or contractual measures.",
+        "retention": "Retention: data will be retained for the time necessary to serve the purpose and comply with legal obligations.",
+        "recipients": "Recipients: data is not transferred to third parties except where legally required.",
+        "rights": "Rights: access, rectification, deletion, opposition, limitation and portability. To exercise them, write to mitya.lyubimov@gmail.com. You can also file a complaint with the data protection authority.",
+        "international": "International transfers: not planned.",
+        "cookies": "Cookies: see the <a href=\"cookies.html\">Cookie Policy</a>."
+      },
+      "notice": {
+        "owner": "Site owner: Dmitry Lyubimov. Address: Barcelona, Spain. Email: <a href=\"mailto:mitya.lyubimov@gmail.com\">mitya.lyubimov@gmail.com</a>.",
+        "purpose": "Purpose: informational website about professional services.",
+        "conditions": "Terms of use: the user commits to diligent use of the site and to respect current legislation.",
+        "intellectual": "Intellectual property: site contents belong to their owner. Reproduction is not permitted without authorization.",
+        "responsibility": "Responsibility: the owner is not responsible for the use made of the site's information or resulting damages.",
+        "jurisdiction": "Applicable law and jurisdiction: Spanish. For any dispute, parties submit to the Courts and Tribunals of Barcelona."
+      }
     },
     "cookieBar": {
       "text": "This site only uses technical cookies to remember your language. You can accept or reject.",
@@ -410,7 +456,30 @@ window.I18N = {
     "legal": {
       "privacyTitle": "Política de privacitat",
       "legalTitle": "Avís legal",
-      "cookiesTitle": "Política de cookies"
+      "cookiesTitle": "Política de cookies",
+      "cookies": {
+        "intro": "Aquest lloc utilitza únicament cookies tècniques per recordar l'idioma seleccionat i la preferència sobre el banner de cookies. No s'utilitzen cookies d'anàlisi ni de publicitat.",
+        "usage": "Cookies utilitzades: <strong>lang</strong> (preferència d'idioma), <strong>cookieConsent</strong> (preferència de consentiment). Duració: fins a 12 mesos.",
+        "config": "Com canviar la configuració: pots esborrar les cookies des de la configuració del teu navegador. Si refuses l'ús de cookies, el lloc seguirà funcionant.",
+        "more": "Consulta la <a href=\"privacy.html\">Política de privacitat</a> per a més informació."
+      },
+      "privacy": {
+        "responsible": "Responsable: Dmitry Lyubimov. Contacte: <a href=\"mailto:mitya.lyubimov@gmail.com\">mitya.lyubimov@gmail.com</a>. Domicili: Barcelona, Espanya.",
+        "purposes": "Finalitats: gestionar consultes realitzades a través del formulari i, si escau, la relació professional i administrativa amb clients. Base jurídica: consentiment de l'interessat i/o execució de mesures precontractuals o contractuals.",
+        "retention": "Conservació: les dades es conservaran el temps necessari per atendre la finalitat i complir obligacions legals.",
+        "recipients": "Destinataris: no es cedeixen dades a tercers excepte obligació legal.",
+        "rights": "Drets: accés, rectificació, supressió, oposició, limitació i portabilitat. Per exercir-los, escriu a mitya.lyubimov@gmail.com. També pots reclamar davant l'AEPD.",
+        "international": "Transferències internacionals: no estan previstes.",
+        "cookies": "Cookies: veure la <a href=\"cookies.html\">Política de cookies</a>."
+      },
+      "notice": {
+        "owner": "Titular del lloc: Dmitry Lyubimov. Domicili: Barcelona, Espanya. Correu: <a href=\"mailto:mitya.lyubimov@gmail.com\">mitya.lyubimov@gmail.com</a>.",
+        "purpose": "Objecte: lloc web informatiu sobre serveis professionals.",
+        "conditions": "Condicions d'ús: l'usuari es compromet a un ús diligent del lloc i a respectar la legalitat vigent.",
+        "intellectual": "Propietat intel·lectual: els continguts del lloc pertanyen al seu titular. No es permet la seva reproducció sense autorització.",
+        "responsibility": "Responsabilitat: el titular no es fa responsable de l'ús que es faci de la informació del lloc ni de danys derivats.",
+        "jurisdiction": "Legislació aplicable i jurisdicció: l'espanyola. Per a qualsevol controvèrsia, les parts se sotmeten als Jutjats i Tribunals de Barcelona."
+      }
     },
     "cookieBar": {
       "text": "Aquest lloc utilitza només cookies tècniques per recordar l'idioma. Pots acceptar o rebutjar.",

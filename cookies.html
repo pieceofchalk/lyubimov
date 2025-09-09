@@ -11,7 +11,8 @@
   <meta property="og:title" content="Dmitry Lyubimov"/>
   <meta property="og:description" content=""/>
   <meta property="og:image" content="assets/favicon.svg"/>
-  <script type="module" defer src="assets/app.js"></script>
+  <script defer src="assets/i18n.js"></script>
+  <script defer src="assets/app.js"></script>
 </head>
 <body>
 <header>
@@ -23,6 +24,7 @@
     <nav aria-label="Main">
       <ul>
         <li><a href="index.html" data-page="index.html" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="about.html" data-page="about.html" data-i18n="nav.about">Sobre mí</a></li>
         <li><a href="services.html" data-page="services.html" data-i18n="nav.services">Servicios</a></li>
         <li><a href="contact.html" data-page="contact.html" data-i18n="nav.contact">Contacto</a></li>
       </ul>
@@ -39,10 +41,10 @@
 
 <section>
   <h1 data-i18n="legal.cookiesTitle">Política de cookies</h1>
-  <p>Este sitio utiliza únicamente cookies técnicas para recordar el idioma seleccionado y la preferencia sobre el banner de cookies. No se utilizan cookies de análisis ni de publicidad.</p>
-  <p>Cookies utilizadas: <strong>lang</strong> (preferencia de idioma), <strong>cookieConsent</strong> (preferencia de consentimiento). Duración: hasta 12 meses.</p>
-  <p>Cómo cambiar la configuración: puedes borrar las cookies desde la configuración de tu navegador. Si rechazas el uso de cookies, el sitio seguirá funcionando.</p>
-  <p>Consulta la <a href="privacy.html">Política de privacidad</a> para más información.</p>
+  <p data-i18n="legal.cookies.intro">Este sitio utiliza únicamente cookies técnicas para recordar el idioma seleccionado y la preferencia sobre el banner de cookies. No se utilizan cookies de análisis ni de publicidad.</p>
+  <p data-i18n="legal.cookies.usage">Cookies utilizadas: <strong>lang</strong> (preferencia de idioma), <strong>cookieConsent</strong> (preferencia de consentimiento). Duración: hasta 12 meses.</p>
+  <p data-i18n="legal.cookies.config">Cómo cambiar la configuración: puedes borrar las cookies desde la configuración de tu navegador. Si rechazas el uso de cookies, el sitio seguirá funcionando.</p>
+  <p data-i18n="legal.cookies.more">Consulta la <a href="privacy.html">Política de privacidad</a> para más información.</p>
 </section>
 
   </div>
