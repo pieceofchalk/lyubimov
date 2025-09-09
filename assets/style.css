@@ -78,6 +78,8 @@ nav a.current { font-weight:700; }
   border-color:var(--accent);
 }
 section { margin:32px 0; }
+h3 { margin:24px 0 16px; color:var(--fg); font-size:1.25rem; }
+h4 { margin:0 0 8px; font-size:1rem; font-weight:600; }
 footer { border-top:1px solid var(--border); }
 footer .links { display:flex; flex-wrap:wrap; gap:12px; }
 .small { font-size:.9rem; color:var(--muted); }
