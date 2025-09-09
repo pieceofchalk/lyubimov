@@ -19,6 +19,16 @@ function initCookieBar(){ if(localStorage.getItem('cookieConsent')) return; cons
 }
 function initContactForm(){ const form=document.getElementById('contact-form'); if(!form) return; 
   form.addEventListener('submit',e=>{ e.preventDefault(); const name=form.name.value, email=form.email.value, message=form.message.value;
-    const subject=encodeURIComponent(`Consulta de ${name}`); const body=encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`);
-    window.open(`mailto:mitya.lyubimov@gmail.com?subject=${subject}&body=${body}`); }); }
+    const subject=`Consulta de ${name}`; const body=`Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`;
+    const mailtoLink=`mailto:mitya.lyubimov@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Try to open mailto, if it fails show fallback
+    try { location.href=mailtoLink; } catch(e) { showMailtoFallback(mailtoLink); }
+    
+    // Show fallback after 2 seconds if user is still on page (indicates mailto didn't work)
+    setTimeout(()=>{ if(document.getElementById('contact-form')) showMailtoFallback(mailtoLink); }, 2000);
+  }); }
+
+function showMailtoFallback(mailtoLink){ const fallback=document.getElementById('mailto-fallback');
+  if(fallback){ fallback.style.display='block'; document.getElementById('mailto-link').href=mailtoLink; } }
 document.addEventListener('DOMContentLoaded', ()=>{ initLang(); initCookieBar(); initContactForm(); });

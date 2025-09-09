@@ -47,6 +47,12 @@
     <button class="btn" type="submit" data-i18n="contact.send">Enviar</button>
     <p class="small" data-i18n="contact.gdpr"></p>
   </form>
+  
+  <!-- Fallback for browsers with security warnings -->
+  <div id="mailto-fallback" style="display:none; margin-top:16px; padding:16px; background:var(--card); border-radius:8px; border:1px solid var(--border);">
+    <p class="small">Si el formulario no funciona, usa este enlace:</p>
+    <a id="mailto-link" class="btn secondary" href="mailto:mitya.lyubimov@gmail.com">Enviar email</a>
+  </div>
   <p class="small" data-i18n="contact.alt"></p>
   <ul class="small">
     <li><a href="mailto:mitya.lyubimov@gmail.com">mitya.lyubimov@gmail.com</a></li>
