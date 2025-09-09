@@ -38,4 +38,10 @@ function showFormMessage(type){
   const errorEl=document.getElementById('form-error');
   if(type==='success' && successEl) { successEl.style.display='block'; }
   if(type==='error' && errorEl) { errorEl.style.display='block'; } }
+// Fallback if i18n fails to load
+if(!window.I18N) {
+  console.warn('I18N not loaded, adding fallback texts');
+  window.I18N = {"es":{"services":{"basic":{"title":"Servicios básicos"},"advanced":{"title":"Servicios avanzados"},"cards":[{"title":"Web básica","text":"Sitio informativo sencillo"},{"title":"Email y nube","text":"Configuración de correo"},{"title":"Consultoría","text":"Datos y automatización"},{"title":"Mantenimiento","text":"Soporte técnico"},{"title":"Informes","text":"Dashboards y reportes"},{"title":"Plataformas","text":"Organización de datos"}],"advanced":{"cards":[{"title":"Arquitectura de datos","text":"Data Lakes y Warehouses"},{"title":"Pipelines","text":"Procesamiento escalable"}]}},"contact":{"title":"Contacto","name":"Nombre","email":"Email","message":"Mensaje","send":"Enviar"}}};
+}
+
 document.addEventListener('DOMContentLoaded', ()=>{ initLang(); initCookieBar(); initContactForm(); });
