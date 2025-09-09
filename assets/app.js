@@ -1,7 +1,7 @@
 // I18N will be loaded from i18n.js as window.I18N
 const qs=(s,e=document)=>e.querySelector(s), qsa=(s,e=document)=>[...e.querySelectorAll(s)];
 function setLang(lang){ if(!window.I18N || !window.I18N[lang]) lang='es'; if(!window.I18N) return; localStorage.setItem('lang',lang); document.documentElement.lang=lang;
-  qsa('[data-i18n]').forEach(n=>{ let v=window.I18N[lang]; for(const p of n.dataset.i18n.split('.')){ v=v?.[p]; } if(typeof v==='string') n.textContent=v; });
+  qsa('[data-i18n]').forEach(n=>{ let v=window.I18N[lang]; for(const p of n.dataset.i18n.split('.')){ v=v?.[p]; } if(typeof v==='string') n.innerHTML=v; });
   const file=(location.pathname.split('/').pop()||'index.html'); const M=window.I18N[lang].meta; if(M) document.title = (file==='services.html'?M.titleServices:file==='contact.html'?M.titleContact:file==='about.html'?M.titleAbout:M.titleHome);
   const meta=qs('meta[name=description]'); if(meta && M.desc) meta.setAttribute('content', M.desc);
   qsa('nav a[data-page]').forEach(a=>a.classList.toggle('current', a.dataset.page===file));
@@ -15,7 +15,7 @@ function initCookieBar(){ if(localStorage.getItem('cookieConsent')) return; cons
   a.append(ok,no); b.append(t,a); document.body.append(b);
   const save=v=>{localStorage.setItem('cookieConsent',v); b.remove();};
   ok.addEventListener('click',()=>save('accepted')); no.addEventListener('click',()=>save('rejected'));
-  const lang=localStorage.getItem('lang')||'es'; if(window.I18N) [t,ok,no].forEach(n=>{ let v=window.I18N[lang]; for(const p of n.dataset.i18n.split('.')) v=v?.[p]; if(typeof v==='string') n.textContent=v; });
+  const lang=localStorage.getItem('lang')||'es'; if(window.I18N) [t,ok,no].forEach(n=>{ let v=window.I18N[lang]; for(const p of n.dataset.i18n.split('.')) v=v?.[p]; if(typeof v==='string') n.innerHTML=v; });
 }
 function initContactForm(){ const form=document.getElementById('contact-form'); if(!form) return; 
   
