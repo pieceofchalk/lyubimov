@@ -18,17 +18,24 @@ function initCookieBar(){ if(localStorage.getItem('cookieConsent')) return; cons
   const lang=localStorage.getItem('lang')||'es'; [t,ok,no].forEach(n=>{ let v=I18N[lang]; for(const p of n.dataset.i18n.split('.')) v=v?.[p]; if(typeof v==='string') n.textContent=v; });
 }
 function initContactForm(){ const form=document.getElementById('contact-form'); if(!form) return; 
-  form.addEventListener('submit',e=>{ e.preventDefault(); const name=form.name.value, email=form.email.value, message=form.message.value;
-    const subject=`Consulta de ${name}`; const body=`Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`;
-    const mailtoLink=`mailto:mitya.lyubimov@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  
+  // Check for success/error in URL params
+  const urlParams=new URLSearchParams(window.location.search);
+  if(urlParams.get('sent')==='true') showFormMessage('success');
+  if(urlParams.get('error')==='true') showFormMessage('error');
+  
+  // Handle form submission
+  form.addEventListener('submit',async e=>{
+    const btn=form.querySelector('button[type="submit"]'); const originalText=btn.textContent;
+    btn.disabled=true; btn.textContent='Enviando...';
     
-    // Try to open mailto, if it fails show fallback
-    try { location.href=mailtoLink; } catch(e) { showMailtoFallback(mailtoLink); }
-    
-    // Show fallback after 2 seconds if user is still on page (indicates mailto didn't work)
-    setTimeout(()=>{ if(document.getElementById('contact-form')) showMailtoFallback(mailtoLink); }, 2000);
+    // Form will submit normally to Web3Forms
+    // Success/error will be handled by redirect or by checking response
   }); }
 
-function showMailtoFallback(mailtoLink){ const fallback=document.getElementById('mailto-fallback');
-  if(fallback){ fallback.style.display='block'; document.getElementById('mailto-link').href=mailtoLink; } }
+function showFormMessage(type){ 
+  const successEl=document.getElementById('form-success'); 
+  const errorEl=document.getElementById('form-error');
+  if(type==='success' && successEl) { successEl.style.display='block'; }
+  if(type==='error' && errorEl) { errorEl.style.display='block'; } }
 document.addEventListener('DOMContentLoaded', ()=>{ initLang(); initCookieBar(); initContactForm(); });
