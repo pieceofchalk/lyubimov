@@ -17,4 +17,8 @@ function initCookieBar(){ if(localStorage.getItem('cookieConsent')) return; cons
   ok.addEventListener('click',()=>save('accepted')); no.addEventListener('click',()=>save('rejected'));
   const lang=localStorage.getItem('lang')||'es'; [t,ok,no].forEach(n=>{ let v=I18N[lang]; for(const p of n.dataset.i18n.split('.')) v=v?.[p]; if(typeof v==='string') n.textContent=v; });
 }
-document.addEventListener('DOMContentLoaded', ()=>{ initLang(); initCookieBar(); });
+function initContactForm(){ const form=document.getElementById('contact-form'); if(!form) return; 
+  form.addEventListener('submit',e=>{ e.preventDefault(); const name=form.name.value, email=form.email.value, message=form.message.value;
+    const subject=encodeURIComponent(`Consulta de ${name}`); const body=encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`);
+    window.open(`mailto:mitya.lyubimov@gmail.com?subject=${subject}&body=${body}`); }); }
+document.addEventListener('DOMContentLoaded', ()=>{ initLang(); initCookieBar(); initContactForm(); });
