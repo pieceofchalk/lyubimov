@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-  <circle cx="16" cy="16" r="6" fill="currentColor" opacity="0.2"/>
-  <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
-  <circle cx="32" cy="16" r="6" fill="currentColor" opacity="0.2"/>
-  <circle cx="32" cy="16" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
-  <circle cx="24" cy="32" r="6" fill="currentColor" opacity="0.3"/>
-  <circle cx="24" cy="32" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
-  <path d="M16 22V28C16 30.2091 17.7909 32 20 32H28C30.2091 32 32 30.2091 32 28V22" stroke="currentColor" stroke-width="2" fill="none"/>
-  <path d="M10 28C10 25.7909 11.7909 24 14 24H18C20.2091 24 22 25.7909 22 28V36C22 38.2091 20.2091 40 18 40H14C11.7909 40 10 38.2091 10 36V28Z" fill="currentColor" opacity="0.1"/>
-  <path d="M26 28C26 25.7909 27.7909 24 30 24H34C36.2091 24 38 25.7909 38 28V36C38 38.2091 36.2091 40 34 40H30C27.7909 40 26 38.2091 26 36V28Z" fill="currentColor" opacity="0.1"/>
-  <path d="M10 28C10 25.7909 11.7909 24 14 24H18C20.2091 24 22 25.7909 22 28V36C22 38.2091 20.2091 40 18 40H14C11.7909 40 10 38.2091 10 36V28Z" stroke="currentColor" stroke-width="2" fill="none"/>
-  <path d="M26 28C26 25.7909 27.7909 24 30 24H34C36.2091 24 38 25.7909 38 28V36C38 38.2091 36.2091 40 34 40H30C27.7909 40 26 38.2091 26 36V28Z" stroke="currentColor" stroke-width="2" fill="none"/>
+  <circle cx="16" cy="16" r="6" fill="#60a5fa" opacity="0.4"/>
+  <circle cx="16" cy="16" r="6" stroke="#2563eb" stroke-width="2" fill="none"/>
+  <circle cx="32" cy="16" r="6" fill="#10b981" opacity="0.4"/>
+  <circle cx="32" cy="16" r="6" stroke="#059669" stroke-width="2" fill="none"/>
+  <circle cx="24" cy="32" r="6" fill="#f97316" opacity="0.5"/>
+  <circle cx="24" cy="32" r="6" stroke="#ea580c" stroke-width="2" fill="none"/>
+  <path d="M16 22V28C16 30.2091 17.7909 32 20 32H28C30.2091 32 32 30.2091 32 28V22" stroke="#1e3a8a" stroke-width="2" fill="none"/>
+  <path d="M10 28C10 25.7909 11.7909 24 14 24H18C20.2091 24 22 25.7909 22 28V36C22 38.2091 20.2091 40 18 40H14C11.7909 40 10 38.2091 10 36V28Z" fill="#fbbf24" opacity="0.3"/>
+  <path d="M26 28C26 25.7909 27.7909 24 30 24H34C36.2091 24 38 25.7909 38 28V36C38 38.2091 36.2091 40 34 40H30C27.7909 40 26 38.2091 26 36V28Z" fill="#fbbf24" opacity="0.3"/>
+  <path d="M10 28C10 25.7909 11.7909 24 14 24H18C20.2091 24 22 25.7909 22 28V36C22 38.2091 20.2091 40 18 40H14C11.7909 40 10 38.2091 10 36V28Z" stroke="#f59e0b" stroke-width="2" fill="none"/>
+  <path d="M26 28C26 25.7909 27.7909 24 30 24H34C36.2091 24 38 25.7909 38 28V36C38 38.2091 36.2091 40 34 40H30C27.7909 40 26 38.2091 26 36V28Z" stroke="#f59e0b" stroke-width="2" fill="none"/>
 </svg>

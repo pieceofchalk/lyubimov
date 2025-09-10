@@ -11,7 +11,9 @@
   <meta property="og:title" content="Dmitry Lyubimov"/>
   <meta property="og:description" content=""/>
   <meta property="og:image" content="assets/favicon.svg"/>
-  <script type="module" defer src="assets/app.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+  <script src="assets/i18n.js"></script>
+  <script defer src="assets/app.js"></script>
 </head>
 <body>
 <header>
@@ -39,14 +41,16 @@
   <div class="container">
 
 <section class="hero">
-  <div class="hero-icon">
-    <img src="assets/icons/gummy-programming.svg" alt="" aria-hidden="true">
+  <div class="hero-content">
+    <h1 data-i18n="hero.title">Soluciones tecnológicas claras y mantenibles</h1>
+    <p data-i18n="hero.subtitle">Webs sencillas, herramientas bien configuradas y datos que ayudan a decidir.</p>
+    <div class="cta">
+      <a class="btn" href="services.html" data-i18n="hero.ctaServices">Ver servicios</a>
+      <a class="btn secondary" href="contact.html" data-i18n="hero.ctaContact">Contactar</a>
+    </div>
   </div>
-  <h1 data-i18n="hero.title">Soluciones tecnológicas claras y mantenibles</h1>
-  <p data-i18n="hero.subtitle">Webs sencillas, herramientas bien configuradas y datos que ayudan a decidir.</p>
-  <div class="cta">
-    <a class="btn" href="services.html" data-i18n="hero.ctaServices">Ver servicios</a>
-    <a class="btn secondary" href="contact.html" data-i18n="hero.ctaContact">Contactar</a>
+  <div class="hero-icon">
+    <dotlottie-wc src="https://lottie.host/34a9cbb6-3571-4e94-b3c2-d5f82632f170/547JiBxsHK.lottie" style="width: 350px; height: 350px;" speed="1" autoplay loop></dotlottie-wc>
   </div>
 </section>
 <section>
@@ -118,8 +122,6 @@
       <a href="legal.html" data-i18n="footer.legal">Aviso legal</a>
       <a href="cookies.html" data-i18n="footer.cookies">Política de cookies</a>
       <a href="https://www.linkedin.com/in/mitya-lyubimov/" rel="noopener" data-i18n="footer.linkedin">LinkedIn</a>
-      <span>•</span>
-      <span>Illustration by <a href="https://icons8.com/illustrations/author/SH5qVUiWnjy4" target="_blank" rel="noopener">Vijay Verma</a></span>
     </div>
   </div>
 </footer>
