@@ -38,18 +38,18 @@ nav a.current { font-weight:700; }
   color:#fff;
   border-color:var(--accent);
 }
-.hero { padding:64px 0 48px; text-align: center; }
+.hero { padding:10px 0 10px; text-align: center; margin-top: 10px; }
 .hero-icon { 
-  margin-bottom: 32px; 
+  margin-bottom: 10px; 
   display: flex; 
   align-items: center; 
   justify-content: center; 
 }
 .hero-icon img { 
-  width: 120px; 
-  height: 120px; 
+  width: 300px; 
+  height: 300px; 
   color: var(--accent); 
-  opacity: 0.8; 
+  opacity: 0.95; 
   animation: float 6s ease-in-out infinite; 
 }
 @keyframes float {
@@ -126,7 +126,7 @@ footer .links { display:flex; flex-wrap:wrap; gap:12px; }
   .cta { flex-direction:column; align-items:stretch; }
   .btn { justify-content:center; }
   .hero h1 { font-size:2rem; }
-  .hero-icon img { width: 80px; height: 80px; }
+  .hero-icon img { width: 200px; height: 200px; }
   .card-icon img { width: 32px; height: 32px; }
   
   /* About page mobile styles */
